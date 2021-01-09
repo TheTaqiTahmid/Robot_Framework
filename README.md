@@ -1,1 +1,1 @@
-# This is my Robot Framework Practice Project Repository 
+# This is my Robot Framework practice project repository 
