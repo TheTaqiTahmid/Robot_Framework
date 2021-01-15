@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210108 10:19:02.720" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210109 12:11:45.119" rpa="false">
 <suite id="s1" name="Front office" source="C:\robot-scripts\Level_1\front_office\Tests\Front_office.robot">
 <test id="s1-t1" name="User should be able to access TEAM page">
 <kw name="Begin Web Test" library="Common" type="setup">
@@ -9,15 +9,15 @@
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20210108 10:19:02.976" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
-<msg timestamp="20210108 10:19:02.978" level="INFO">Firefox driver log is always forced to to: C:\robot-scripts\Level_1\front_office\Results\geckodriver-8.log</msg>
-<status status="PASS" starttime="20210108 10:19:02.976" endtime="20210108 10:19:09.864"></status>
+<msg timestamp="20210109 12:11:45.413" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20210109 12:11:45.416" level="INFO">Firefox driver log is always forced to to: C:\robot-scripts\Level_1\front_office\Results\geckodriver-13.log</msg>
+<status status="PASS" starttime="20210109 12:11:45.412" endtime="20210109 12:11:51.775"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210108 10:19:09.864" endtime="20210108 10:19:10.145"></status>
+<status status="PASS" starttime="20210109 12:11:51.775" endtime="20210109 12:11:52.036"></status>
 </kw>
-<status status="PASS" starttime="20210108 10:19:02.975" endtime="20210108 10:19:10.147"></status>
+<status status="PASS" starttime="20210109 12:11:45.412" endtime="20210109 12:11:52.036"></status>
 </kw>
 <kw name="Go to Landing Page" library="App">
 <kw name="Navigate to" library="Landing">
@@ -26,10 +26,10 @@
 <arguments>
 <arg>${URL}</arg>
 </arguments>
-<msg timestamp="20210108 10:19:10.148" level="INFO">Opening url 'http://www.robotframeworktutorial.com/front-office/'</msg>
-<status status="PASS" starttime="20210108 10:19:10.148" endtime="20210108 10:19:12.206"></status>
+<msg timestamp="20210109 12:11:52.038" level="INFO">Opening url 'http://www.robotframeworktutorial.com/front-office/'</msg>
+<status status="PASS" starttime="20210109 12:11:52.038" endtime="20210109 12:11:54.321"></status>
 </kw>
-<status status="PASS" starttime="20210108 10:19:10.148" endtime="20210108 10:19:12.206"></status>
+<status status="PASS" starttime="20210109 12:11:52.037" endtime="20210109 12:11:54.321"></status>
 </kw>
 <kw name="Verify that page loaded" library="Landing">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -37,11 +37,11 @@
 <arguments>
 <arg>${LANDING_NAVIGATION_ELEMENT}</arg>
 </arguments>
-<status status="PASS" starttime="20210108 10:19:12.207" endtime="20210108 10:19:12.218"></status>
+<status status="PASS" starttime="20210109 12:11:54.322" endtime="20210109 12:11:54.336"></status>
 </kw>
-<status status="PASS" starttime="20210108 10:19:12.206" endtime="20210108 10:19:12.218"></status>
+<status status="PASS" starttime="20210109 12:11:54.321" endtime="20210109 12:11:54.336"></status>
 </kw>
-<status status="PASS" starttime="20210108 10:19:10.147" endtime="20210108 10:19:12.218"></status>
+<status status="PASS" starttime="20210109 12:11:52.037" endtime="20210109 12:11:54.336"></status>
 </kw>
 <kw name="Go to &quot;TEAM&quot; Page" library="App">
 <kw name="Select &quot;TEAM&quot; page" library="TopNav">
@@ -50,10 +50,10 @@
 <arguments>
 <arg>${TEAM_LINK}</arg>
 </arguments>
-<msg timestamp="20210108 10:19:12.221" level="INFO">Clicking link 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(5) &gt; a'.</msg>
-<status status="PASS" starttime="20210108 10:19:12.221" endtime="20210108 10:19:12.460"></status>
+<msg timestamp="20210109 12:11:54.339" level="INFO">Clicking link 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(5) &gt; a'.</msg>
+<status status="PASS" starttime="20210109 12:11:54.339" endtime="20210109 12:11:54.589"></status>
 </kw>
-<status status="PASS" starttime="20210108 10:19:12.220" endtime="20210108 10:19:12.460"></status>
+<status status="PASS" starttime="20210109 12:11:54.339" endtime="20210109 12:11:54.589"></status>
 </kw>
 <kw name="Verify Page loaded" library="Team">
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
@@ -61,11 +61,11 @@
 <arguments>
 <arg>${TEAM_HEADER_LABEL}</arg>
 </arguments>
-<status status="PASS" starttime="20210108 10:19:12.462" endtime="20210108 10:19:12.469"></status>
+<status status="PASS" starttime="20210109 12:11:54.590" endtime="20210109 12:11:54.595"></status>
 </kw>
-<status status="PASS" starttime="20210108 10:19:12.462" endtime="20210108 10:19:12.469"></status>
+<status status="PASS" starttime="20210109 12:11:54.589" endtime="20210109 12:11:54.595"></status>
 </kw>
-<status status="PASS" starttime="20210108 10:19:12.220" endtime="20210108 10:19:12.469"></status>
+<status status="PASS" starttime="20210109 12:11:54.338" endtime="20210109 12:11:54.595"></status>
 </kw>
 <kw name="Join Path" library="OperatingSystem">
 <doc>Joins the given path part(s) to the given base path.</doc>
@@ -76,51 +76,180 @@
 <assign>
 <var>${New_dir}</var>
 </assign>
-<msg timestamp="20210108 10:19:12.470" level="INFO">${New_dir} = parent\example_directory</msg>
-<status status="PASS" starttime="20210108 10:19:12.470" endtime="20210108 10:19:12.470"></status>
+<msg timestamp="20210109 12:11:54.596" level="INFO">${New_dir} = parent\example_directory</msg>
+<status status="PASS" starttime="20210109 12:11:54.596" endtime="20210109 12:11:54.596"></status>
 </kw>
 <kw name="Create Directory" library="OperatingSystem">
 <doc>Creates the specified directory.</doc>
 <arguments>
 <arg>${New_dir}</arg>
 </arguments>
-<msg timestamp="20210108 10:19:12.472" level="INFO" html="yes">Created directory '&lt;a href="file://C:\robot-scripts\Level_1\front_office\parent\example_directory"&gt;C:\robot-scripts\Level_1\front_office\parent\example_directory&lt;/a&gt;'.</msg>
-<status status="PASS" starttime="20210108 10:19:12.471" endtime="20210108 10:19:12.472"></status>
+<msg timestamp="20210109 12:11:54.597" level="INFO" html="yes">Directory '&lt;a href="file://C:\robot-scripts\Level_1\parent\example_directory"&gt;C:\robot-scripts\Level_1\parent\example_directory&lt;/a&gt;' already exists.</msg>
+<status status="PASS" starttime="20210109 12:11:54.597" endtime="20210109 12:11:54.597"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20210108 10:19:14.479" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210108 10:19:12.473" endtime="20210108 10:19:14.479"></status>
+<msg timestamp="20210109 12:11:56.599" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210109 12:11:54.597" endtime="20210109 12:11:56.599"></status>
 </kw>
 <kw name="End Web Test" library="Common" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210108 10:19:14.481" endtime="20210108 10:19:15.409"></status>
+<status status="PASS" starttime="20210109 12:11:56.601" endtime="20210109 12:11:57.416"></status>
 </kw>
-<status status="PASS" starttime="20210108 10:19:14.480" endtime="20210108 10:19:15.409"></status>
+<status status="PASS" starttime="20210109 12:11:56.601" endtime="20210109 12:11:57.416"></status>
 </kw>
 <doc>User should be able to click the TEAM button on the front page</doc>
 <tags>
 <tag>Smoke</tag>
 </tags>
-<status status="PASS" starttime="20210108 10:19:02.974" endtime="20210108 10:19:15.409" critical="yes"></status>
+<status status="PASS" starttime="20210109 12:11:45.410" endtime="20210109 12:11:57.417" critical="yes"></status>
+</test>
+<test id="s1-t2" name="The TEAM section should include desired headline value">
+<kw name="Begin Web Test" library="Common" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210109 12:11:57.422" level="INFO">Opening browser 'firefox' to base url 'about:blank'.</msg>
+<msg timestamp="20210109 12:11:57.424" level="INFO">Firefox driver log is always forced to to: C:\robot-scripts\Level_1\front_office\Results\geckodriver-14.log</msg>
+<status status="PASS" starttime="20210109 12:11:57.422" endtime="20210109 12:12:03.786"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210109 12:12:03.786" endtime="20210109 12:12:04.070"></status>
+</kw>
+<status status="PASS" starttime="20210109 12:11:57.422" endtime="20210109 12:12:04.070"></status>
+</kw>
+<kw name="Go to Landing Page" library="App">
+<kw name="Navigate to" library="Landing">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20210109 12:12:04.072" level="INFO">Opening url 'http://www.robotframeworktutorial.com/front-office/'</msg>
+<status status="PASS" starttime="20210109 12:12:04.072" endtime="20210109 12:12:06.458"></status>
+</kw>
+<status status="PASS" starttime="20210109 12:12:04.072" endtime="20210109 12:12:06.459"></status>
+</kw>
+<kw name="Verify that page loaded" library="Landing">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${LANDING_NAVIGATION_ELEMENT}</arg>
+</arguments>
+<status status="PASS" starttime="20210109 12:12:06.459" endtime="20210109 12:12:06.469"></status>
+</kw>
+<status status="PASS" starttime="20210109 12:12:06.459" endtime="20210109 12:12:06.469"></status>
+</kw>
+<status status="PASS" starttime="20210109 12:12:04.071" endtime="20210109 12:12:06.469"></status>
+</kw>
+<kw name="Go to &quot;TEAM&quot; Page" library="App">
+<kw name="Select &quot;TEAM&quot; page" library="TopNav">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${TEAM_LINK}</arg>
+</arguments>
+<msg timestamp="20210109 12:12:06.470" level="INFO">Clicking link 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(5) &gt; a'.</msg>
+<status status="PASS" starttime="20210109 12:12:06.470" endtime="20210109 12:12:06.707"></status>
+</kw>
+<status status="PASS" starttime="20210109 12:12:06.470" endtime="20210109 12:12:06.707"></status>
+</kw>
+<kw name="Verify Page loaded" library="Team">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<arguments>
+<arg>${TEAM_HEADER_LABEL}</arg>
+</arguments>
+<status status="PASS" starttime="20210109 12:12:06.708" endtime="20210109 12:12:06.715"></status>
+</kw>
+<status status="PASS" starttime="20210109 12:12:06.708" endtime="20210109 12:12:06.715"></status>
+</kw>
+<status status="PASS" starttime="20210109 12:12:06.469" endtime="20210109 12:12:06.715"></status>
+</kw>
+<kw name="Validate &quot;TEAM&quot; Page" library="App">
+<kw name="Validate Page Contents" library="Team">
+<kw name="Get Text" library="SeleniumLibrary">
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<arguments>
+<arg>${TEAM_HEADER_LABEL}</arg>
+</arguments>
+<assign>
+<var>${Element_Text}</var>
+</assign>
+<msg timestamp="20210109 12:12:06.739" level="INFO">${Element_Text} = OUR AMAZING TEAM</msg>
+<status status="PASS" starttime="20210109 12:12:06.718" endtime="20210109 12:12:06.739"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${Element_Text}</arg>
+<arg>Our Amazing Team</arg>
+<arg>ignore_case=True</arg>
+</arguments>
+<status status="PASS" starttime="20210109 12:12:06.739" endtime="20210109 12:12:06.740"></status>
+</kw>
+<status status="PASS" starttime="20210109 12:12:06.717" endtime="20210109 12:12:06.740"></status>
+</kw>
+<status status="PASS" starttime="20210109 12:12:06.717" endtime="20210109 12:12:06.740"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210109 12:12:08.744" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210109 12:12:06.741" endtime="20210109 12:12:08.744"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${PREV TEST STATUS}</arg>
+</arguments>
+<msg timestamp="20210109 12:12:08.744" level="INFO">PASS</msg>
+<status status="PASS" starttime="20210109 12:12:08.744" endtime="20210109 12:12:08.744"></status>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${PREV TEST STATUS}</arg>
+<arg>PASS</arg>
+</arguments>
+<status status="PASS" starttime="20210109 12:12:08.745" endtime="20210109 12:12:08.745"></status>
+</kw>
+<kw name="End Web Test" library="Common" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210109 12:12:08.746" endtime="20210109 12:12:09.552"></status>
+</kw>
+<status status="PASS" starttime="20210109 12:12:08.746" endtime="20210109 12:12:09.552"></status>
+</kw>
+<doc>The page should contain the desired headline</doc>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20210109 12:11:57.420" endtime="20210109 12:12:09.553" critical="yes"></status>
 </test>
 <doc>This test suite is for testing "http://www.robotframeworktutorial.com/front-office/" website</doc>
-<status status="PASS" starttime="20210108 10:19:02.722" endtime="20210108 10:19:15.421"></status>
+<status status="PASS" starttime="20210109 12:11:45.120" endtime="20210109 12:12:09.561"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0">Critical Tests</stat>
-<stat pass="1" fail="0">All Tests</stat>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0">Smoke</stat>
+<stat pass="2" fail="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" id="s1" name="Front office">Front office</stat>
+<stat pass="2" fail="0" id="s1" name="Front office">Front office</stat>
 </suite>
 </statistics>
 <errors>

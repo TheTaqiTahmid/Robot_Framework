@@ -32,3 +32,5 @@ The TEAM section should include desired headline value
     App.Go to "TEAM" Page
     App.Validate "TEAM" Page
     Sleep    2s
+    Log    ${PREV TEST STATUS}    # Example of Automatic variables
+    Should Be Equal As Strings    ${PREV TEST STATUS}    PASS

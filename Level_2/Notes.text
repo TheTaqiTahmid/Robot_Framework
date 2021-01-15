@@ -1,0 +1,48 @@
+# It is possible to get help from other Robot Framework (RF) users from RF slack channel.
+
+# Pycharm has a Find Usage and ToDo function that can increase the productivity. Comparable feature also available in VS code. 
+
+# Advanced command line options for Robot Framework:
+    * --reporttitle: Allows you to provide specific title on the report file or --logtitle for the log file. 
+    * --critical (-c): Allows you to specify which tag(s) will cause the test report to be red. (The html page will be red)
+    * -- noncritical (-n): Allows you to specify which tag(s) will cause the tes report not to be red. 
+    * --timestampoutputs(-T): Prevents result/log overwriting. Preserve multiple results. 
+# Normally the robot scripts execute alphanumerically. We can change the order by adding prefix "XX__"  (XX being the digit) to the robot files.
+
+# Randomizing script execution order:
+    * --randomize tests/suits/all/none
+
+# Get more detailed log: 
+    * In command line: --loglevel (-L) TEST/DEBUG/INFO(default)/WARN/ERROR/NONE
+    * In the script: Set Log Level (-L) TEST/DEBUG/INFO(default)/WARN/ERROR/NONE
+    We can set log level to debug at the beginning of the test case and then set the log level to INFO at the end of the test case 
+    so that only a particular test case will generate detailed debug level log file.
+
+# Automatic variables: There are bunch of variables that are generated automatically.
+    For more info goto https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html and search Automatic variables 
+    
+# Return values from keywords: We can get the return value from a particular keyword and use that value to our script for advanced stuffs. 
+    How to do: ${Returnedinfo}  A sample keyword
+    We can also set a return value for a particular keyword by adding [Return]    Return value  within the keyword.
+
+# Creating custom robot library with python
+    * Create a python module file (.py)
+    * Add method(s): underscore for spaces 
+    * Declare the library at the top of the script
+    * Call the method as keyword 
+
+# HTML and CSS: HTML: HTML has tags and attributes: 
+                      Tags example: head, body, div, p, span, ul etc.
+                      Attributes: They are bits of information put inside the tags. 
+                                  Official attributes: id, title, name, href, class (CSS class) etc. 
+                                  Custom attribute format: Use data-some-attribute='some value'
+                     Document Object Model (DOM): A structured representation of document as a tree (parent & child)
+                                                 Provides methods or functions to allow access to the tree. 
+                                                 We can use RF "Execute Javascript" keyword to intgerrogate & manipulate this DOM
+
+# Bootstrap: It is a collection of CSS and Javascript libraries that significantly speed up web development 
+            * It provides time saving classes, icons, wide variety of styling features. 
+            * Facilitates responsive design using a grid system.
+
+# Recommended locator strategy: USe either id, or xpath or css locator. Example: locator_strategy.robot
+                                * Best locator strategy is the one that works. 
