@@ -46,3 +46,22 @@
 
 # Recommended locator strategy: USe either id, or xpath or css locator. Example: locator_strategy.robot
                                 * Best locator strategy is the one that works. 
+
+# Basic HTML and CSS syntax: 
+  xpath and CSS basic syntaxes are very similar. 
+    * tag[attribute='some value']
+    Example:
+    * Click Link    xpath=//a[@id='Foo']
+                    css=a[id='Foo']
+
+# Parent, child, sibling relationships
+    * Absolute: xpath=html/div[@id='DetailPage']/a
+                css=div[id='DetailPage']>a
+    * Relative: xpath=//div[@id='DetailPage']//a
+                css= div[@id='DetailPage'] a
+    * Partial locators: If the locator attribute has dynamic value, it is better to use partial locator
+                    xpath: Relaive locator: xpath=//input[type='submit-3453321']
+                           Partial locator: xpath=//input[starts-with(@type,'Submit')]
+                    CSS:   Relaive locator: css=input[type='submit-3453321']
+                           Partial locator: css=input[type^='submit']
+
