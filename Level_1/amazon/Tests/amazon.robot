@@ -27,7 +27,7 @@ User can search for product
     [Tags]  Smoke
     Amazon.Seach for Products
 
-        
+
 
 
 *** Keywords ***

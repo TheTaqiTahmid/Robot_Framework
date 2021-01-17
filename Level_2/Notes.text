@@ -62,6 +62,24 @@
     * Partial locators: If the locator attribute has dynamic value, it is better to use partial locator
                     xpath: Relaive locator: xpath=//input[type='submit-3453321']
                            Partial locator: xpath=//input[starts-with(@type,'Submit')]
+                           Partial locator: xpath=//input[ends-with(@type,'Submit')]
+                           Partial locator: xpath=//input[contains(@type,'Submit')]
+                           Partial locator: xpath=//input[contains(text(),'Full or partial text within a tag')] # We can create a custom locator if a tag has some text within itself.
                     CSS:   Relaive locator: css=input[type='submit-3453321']
-                           Partial locator: css=input[type^='submit']
+                           Partial locator: css=input[type^='submit'] # Starts with
+                           Partial locator: css=input[type$='submit'] # Ends with
+                           Partial locator: css=input[type*='submit'] # Contains
+    * Finding and using multiple elements: We can use Robot Framework keyword 'Page Should Contain Element  locator   limit=x'
+                                           And find/create a common locator for the elemetns to match
+                                           Example: locator_strategy.robot
 
+# Loop and if/else statements in Robot Framework: 
+    * If/Else statement: The robot framework has a builtin keyword called, 'Run keywords If' which can be used to execute if or if/else, or if/else/elseif
+                        Example: condition_and_loop.robot
+    * For Loop: Robot Framework supports For Loop.
+                        Example: condition_and_loop.robot
+    * Repeat a particular keyword multiple times: 'Repeat Keyword   <number of times we want to repeat>    <Keyword Name>
+                        Example: condition_and_loop.robot 
+                        
+# Dictionaries in Robot Framework:Ex: &{URL}    google=http://www.google.com    robot_tutorial=http://www.robotframeworktutorial.com/    amazon=http://www.amazon.com
+                                  Example: list_and_dictionary.robot
