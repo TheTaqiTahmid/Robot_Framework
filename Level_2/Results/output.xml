@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210117 13:13:47.577" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210131 11:00:28.570" rpa="false">
 <suite id="s1" name="List And Dictionary" source="C:\robot-scripts\Level_2\Tests\list_and_dictionary.robot">
 <test id="s1-t1" name="Log Listed Items">
 <kw name="Set Variable" library="BuiltIn">
@@ -12,10 +12,10 @@
 <var>${name 2}</var>
 <var>${name 3}</var>
 </assign>
-<msg timestamp="20210117 13:13:47.823" level="INFO">${name 1} = Taqi</msg>
-<msg timestamp="20210117 13:13:47.823" level="INFO">${name 2} = Saimul</msg>
-<msg timestamp="20210117 13:13:47.824" level="INFO">${name 3} = Affani</msg>
-<status status="PASS" starttime="20210117 13:13:47.823" endtime="20210117 13:13:47.824"></status>
+<msg timestamp="20210131 11:00:28.848" level="INFO">${name 1} = Taqi</msg>
+<msg timestamp="20210131 11:00:28.848" level="INFO">${name 2} = Saimul</msg>
+<msg timestamp="20210131 11:00:28.848" level="INFO">${name 3} = Affani</msg>
+<status status="PASS" starttime="20210131 11:00:28.847" endtime="20210131 11:00:28.848"></status>
 </kw>
 <kw name="Log Many" library="BuiltIn">
 <doc>Logs the given messages as separate entries using the INFO level.</doc>
@@ -24,12 +24,12 @@
 <arg>${name 2}</arg>
 <arg>${name 3}</arg>
 </arguments>
-<msg timestamp="20210117 13:13:47.824" level="INFO">Taqi</msg>
-<msg timestamp="20210117 13:13:47.824" level="INFO">Saimul</msg>
-<msg timestamp="20210117 13:13:47.824" level="INFO">Affani</msg>
-<status status="PASS" starttime="20210117 13:13:47.824" endtime="20210117 13:13:47.824"></status>
+<msg timestamp="20210131 11:00:28.849" level="INFO">Taqi</msg>
+<msg timestamp="20210131 11:00:28.849" level="INFO">Saimul</msg>
+<msg timestamp="20210131 11:00:28.849" level="INFO">Affani</msg>
+<status status="PASS" starttime="20210131 11:00:28.848" endtime="20210131 11:00:28.849"></status>
 </kw>
-<status status="PASS" starttime="20210117 13:13:47.822" endtime="20210117 13:13:47.826" critical="yes"></status>
+<status status="PASS" starttime="20210131 11:00:28.846" endtime="20210131 11:00:28.849" critical="yes"></status>
 </test>
 <test id="s1-t2" name="Iterate Through Dictionary">
 <kw name="${key} | ${value} IN [ &amp;{URL} ]" type="for">
@@ -40,34 +40,34 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20210117 13:13:47.838" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210117 13:13:47.837" endtime="20210117 13:13:51.049"></status>
+<msg timestamp="20210131 11:00:28.864" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210131 11:00:28.861" endtime="20210131 11:00:32.113"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210117 13:13:51.049" endtime="20210117 13:13:53.210"></status>
+<status status="PASS" starttime="20210131 11:00:32.113" endtime="20210131 11:00:34.283"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
-<arg>${URL.${key}}</arg>
+<arg>${URL['google']}</arg>
 </arguments>
-<msg timestamp="20210117 13:13:53.211" level="INFO">Opening url 'http://www.google.com'</msg>
-<status status="PASS" starttime="20210117 13:13:53.210" endtime="20210117 13:13:54.169"></status>
+<msg timestamp="20210131 11:00:34.284" level="INFO">Opening url 'http://www.google.com'</msg>
+<status status="PASS" starttime="20210131 11:00:34.283" endtime="20210131 11:00:35.248"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20210117 13:13:56.185" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210117 13:13:54.169" endtime="20210117 13:13:56.185"></status>
+<msg timestamp="20210131 11:00:37.254" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210131 11:00:35.248" endtime="20210131 11:00:37.254"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210117 13:13:56.185" endtime="20210117 13:13:58.425"></status>
+<status status="PASS" starttime="20210131 11:00:37.254" endtime="20210131 11:00:39.472"></status>
 </kw>
-<status status="PASS" starttime="20210117 13:13:47.837" endtime="20210117 13:13:58.425"></status>
+<status status="PASS" starttime="20210131 11:00:28.861" endtime="20210131 11:00:39.472"></status>
 </kw>
 <kw name="${key} = robot_tutorial, ${value} = http://www.robotframeworktutorial.com/" type="foritem">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -76,34 +76,34 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20210117 13:13:58.425" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210117 13:13:58.425" endtime="20210117 13:14:01.738"></status>
+<msg timestamp="20210131 11:00:39.473" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210131 11:00:39.473" endtime="20210131 11:00:42.707"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210117 13:14:01.738" endtime="20210117 13:14:03.931"></status>
+<status status="PASS" starttime="20210131 11:00:42.708" endtime="20210131 11:00:44.867"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
-<arg>${URL.${key}}</arg>
+<arg>${URL['google']}</arg>
 </arguments>
-<msg timestamp="20210117 13:14:03.931" level="INFO">Opening url 'http://www.robotframeworktutorial.com/'</msg>
-<status status="PASS" starttime="20210117 13:14:03.931" endtime="20210117 13:14:08.441"></status>
+<msg timestamp="20210131 11:00:44.868" level="INFO">Opening url 'http://www.google.com'</msg>
+<status status="PASS" starttime="20210131 11:00:44.868" endtime="20210131 11:00:45.805"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20210117 13:14:10.450" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210117 13:14:08.441" endtime="20210117 13:14:10.450"></status>
+<msg timestamp="20210131 11:00:47.814" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210131 11:00:45.805" endtime="20210131 11:00:47.814"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210117 13:14:10.450" endtime="20210117 13:14:12.755"></status>
+<status status="PASS" starttime="20210131 11:00:47.814" endtime="20210131 11:00:50.241"></status>
 </kw>
-<status status="PASS" starttime="20210117 13:13:58.425" endtime="20210117 13:14:12.755"></status>
+<status status="PASS" starttime="20210131 11:00:39.473" endtime="20210131 11:00:50.241"></status>
 </kw>
 <kw name="${key} = amazon, ${value} = http://www.amazon.com" type="foritem">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -112,40 +112,40 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20210117 13:14:12.756" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20210117 13:14:12.756" endtime="20210117 13:14:16.013"></status>
+<msg timestamp="20210131 11:00:50.242" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210131 11:00:50.241" endtime="20210131 11:00:53.481"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210117 13:14:16.013" endtime="20210117 13:14:18.163"></status>
+<status status="PASS" starttime="20210131 11:00:53.481" endtime="20210131 11:00:55.640"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
-<arg>${URL.${key}}</arg>
+<arg>${URL['google']}</arg>
 </arguments>
-<msg timestamp="20210117 13:14:18.164" level="INFO">Opening url 'http://www.amazon.com'</msg>
-<status status="PASS" starttime="20210117 13:14:18.164" endtime="20210117 13:14:19.662"></status>
+<msg timestamp="20210131 11:00:55.640" level="INFO">Opening url 'http://www.google.com'</msg>
+<status status="PASS" starttime="20210131 11:00:55.640" endtime="20210131 11:00:56.659"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
-<msg timestamp="20210117 13:14:21.665" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20210117 13:14:19.662" endtime="20210117 13:14:21.665"></status>
+<msg timestamp="20210131 11:00:58.665" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210131 11:00:56.659" endtime="20210131 11:00:58.665"></status>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210117 13:14:21.665" endtime="20210117 13:14:24.012"></status>
+<status status="PASS" starttime="20210131 11:00:58.665" endtime="20210131 11:01:00.910"></status>
 </kw>
-<status status="PASS" starttime="20210117 13:14:12.756" endtime="20210117 13:14:24.012"></status>
+<status status="PASS" starttime="20210131 11:00:50.241" endtime="20210131 11:01:00.910"></status>
 </kw>
-<status status="PASS" starttime="20210117 13:13:47.837" endtime="20210117 13:14:24.012"></status>
+<status status="PASS" starttime="20210131 11:00:28.861" endtime="20210131 11:01:00.910"></status>
 </kw>
-<status status="PASS" starttime="20210117 13:13:47.834" endtime="20210117 13:14:24.012" critical="yes"></status>
+<status status="PASS" starttime="20210131 11:00:28.861" endtime="20210131 11:01:00.911" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210117 13:13:47.578" endtime="20210117 13:14:24.014"></status>
+<status status="PASS" starttime="20210131 11:00:28.573" endtime="20210131 11:01:00.912"></status>
 </suite>
 <statistics>
 <total>

@@ -58,7 +58,7 @@
     * Absolute: xpath=html/div[@id='DetailPage']/a
                 css=div[id='DetailPage']>a
     * Relative: xpath=//div[@id='DetailPage']//a
-                css= div[@id='DetailPage'] a
+                css= div[id='DetailPage'] a
     * Partial locators: If the locator attribute has dynamic value, it is better to use partial locator
                     xpath: Relaive locator: xpath=//input[type='submit-3453321']
                            Partial locator: xpath=//input[starts-with(@type,'Submit')]
@@ -83,3 +83,7 @@
                         
 # Dictionaries in Robot Framework:Ex: &{URL}    google=http://www.google.com    robot_tutorial=http://www.robotframeworktutorial.com/    amazon=http://www.amazon.com
                                   Example: list_and_dictionary.robot
+
+# Data driven tests: 
+
+
